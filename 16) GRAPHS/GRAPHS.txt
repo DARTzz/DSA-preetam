@@ -113,7 +113,7 @@ we have 3 algox :
 
 NOTE : DFS cant be used in case of SSSPP since, DFS has a tendence to go "AS FAR AS POSSIBLE" from source. Hence cant find shortest path.
 
-BFS(SSSPP) : we traverse the nodes of graph using DFS BUT! we start from the starting node and maintain additional variables for every node(prolly a hashmap) for keeping track of the parent node of the current node. Hence once we have traversed the whole graph we can backtrack from any node using the parent variable to find the shortest path to the starting node.IMPORTANT NOTE : BFS IS LIT !!! since it reaches child nodes in shortest path.
+BFS(SSSPP) : we traverse the nodes of graph using BFS BUT! we start from the starting node and maintain additional variables for every node(prolly a hashmap) for keeping track of the parent node of the current node. Hence once we have traversed the whole graph we can backtrack from any node using the parent variable to find the shortest path to the starting node.IMPORTANT NOTE : BFS IS LIT !!! since it reaches child nodes in shortest path.
 
 QUESTION: Why is BFS PREFERED ?
 ANSWER : Think about it !!! suppose a node has two paths leading to another node, one is 3 hops away and another is 5 hops away, BFS WILL REACH THE NODE in 3 rd level !!!!! and when it reaches again at level 5, it will be already visited!!!. Hence BFS really does help find shortest path.

@@ -103,9 +103,9 @@ class AdjacencyList {
 
     // SSSPP using BFS to identify the path that needs the least number of hops.
     public void bfsBestPath(AdjacencyListNode starting) {
-        HashMap<AdjacencyListNode, AdjacencyListNode> parentMap = new HashMap<>();
-        HashSet<AdjacencyListNode> set = new HashSet<>();
-        LinkedList<AdjacencyListNode> queue = new LinkedList<>();
+        HashMap<AdjacencyListNode, AdjacencyListNode> parentMap = new HashMap<>(); // track of parents
+        HashSet<AdjacencyListNode> set = new HashSet<>(); // to check the visited nodes
+        LinkedList<AdjacencyListNode> queue = new LinkedList<>(); // queue for BFS
         queue.addFirst(starting);
         while (queue.size() > 0) {
             AdjacencyListNode current = queue.pollLast();

@@ -1,9 +1,6 @@
 How is this different from SSSP ?
-  
-In this algorithm, we find shortest path of a single destination from all sources.
 
-Hence its kinda that same.
-eg. In SSSP, we find the shortest path from headquarter to all other cities in SSSP
-whereas, we find Shortest path to the headquarter from all the points to the office in APSP.
+In sssp we find the shortest path of one node from all other nodes.
+whereas in APSP we do the same but between all the nodes !!!
 
-so we perfrom SSSP multiple time sto find APSP :) and store the path in a DS.
+this can be done by applying SSSP for all the nodes or using floydd warshall.

@@ -26,7 +26,7 @@ ANSWER : Bellman ford states that the SSSP will be found in n-1 iterations BUT i
 HENCE NOTE : if on nth cycle there are changes in the SSSP distance, then there exists a negative cycle.
 
 QUESTION : why does bellman ford run in n-1 times ?
-ANSWER : lets look at what bellman ford algo is trying to do to evaluate the andwer :
+ANSWER : lets look at what bellman ford algo is trying to do to evaluate the answer :
 -> If any node is achieved better distance in previous iteration, then that better distance is used to improve distance of other vertices.
 -> so what could be the worse case here ?  eg >  A--10--> B--20--> C--30--> D--40-->E
         the above is an example of degenerate case, where we need atmost n-1 iterations.
