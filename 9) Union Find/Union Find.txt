@@ -58,3 +58,4 @@ IMPROVEMENTS :
 			- like using tree operations to store the values
 
 		> its better to maintain an array that keeps track for the size of the disjoint sets so that while merging its much easier to lookup the size instead of traversal.
+
